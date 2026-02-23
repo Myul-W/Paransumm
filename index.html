@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>파란섬 영도</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <div id="header">
+
+            <!-- header_top -->
+            <div class="header_top">
+                <div class="inner_header">
+
+                    <div class="header_top_left">
+                        <div class="line"></div>
+                        <p>부서지는 파도 사이 아름다운 푸른 섬</p>
+                        <img class="weather_icon" src="./images/util_weather.png" alt="weather_icon">
+                        <p class="weather">16.1℃</p>
+
+                    </div>
+
+                    <div class="header_top_right">
+
+                        <ul>
+
+                            <li><!-- 1 -->
+                                <div class="search_bar">
+                                    <form action="" method="get">
+                                        <input type="search" name="search" id="search" placeholder="Search">
+                                    </form>
+                                </div><!-- .search_bar -->
+                            </li>
+
+                            <li><!-- 2 -->
+                                <a href="#">
+                                    <img src="./images/util_membershp.png" alt="">
+                                </a>
+                            </li>
+
+                            <li><!-- 3 -->
+                                <div class="select_wrap">
+                                    <form action="" method="post">
+                                        <select name="familysite" id="familysite">
+                                            <option value="">Korean</option>
+                                            <!-- 빈 데이터, disabled : 클릭해도 선택안됨. -->
+                                            <!-- selected : 처음 선택된 상태  -->
+                                            <!-- <option value="">Korean</option> -->
+                                            <option value="">English</option>
+                                        </select>
+                                    </form>
+                                </div><!-- .select_wrap -->
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- inner_header:end -->
+            </div>
+            <!-- header_top:end -->
+
+            <!-- header_bottom -->
+            <div class="header_bottom">
+                <div class="inner_header_bottom">
+                    <h1 class="logo_box">
+                        <a href="./index.html">
+                            <img class="logo" src="./images/logo.png" alt="파란섬 영도">
+                        </a>
+                    </h1>
+
+                    <nav class="wrap_gnb">
+                        <ul class="gnb">
+                            <li><a href="./sub01.html">영도 여행길</a></li>
+                            <li><a href="./sub02.html">영도 느끼기</a></li>
+                            <li><a href="./sub03.html">영도 이모저모</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- header_bottom:end -->
+        </div>
+        <!-- header:end -->
+
+        <!-- visual -->
+        <div id="visual">
+
+            <div class="main_visual">
+                <div class="swiper mainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide s1">
+                            <!-- txt_box -->
+                            <div class="txt_box">
+                                <h2>흰여울마을</h2>
+                                <p>부산 바다를 마주한 절벽 위,<br>하늘색과 가장 많이 닮은 마을</p>
+
+                            </div>
+                            <!-- txt_box:end -->
+                        </div>
+                        <div class="swiper-slide s2">
+                            <!-- txt_box -->
+                            <div class="txt_box">
+                                <h2>커피특화거리</h2>
+                                <p>오래된 선박 창고의 변신,<br>
+                                    커피 향으로 채워진 조선소 골목</p>
+
+                            </div>
+                            <!-- txt_box:end -->
+                        </div>
+                        <div class="swiper-slide s3">
+                            <!-- txt_box -->
+                            <div class="txt_box">
+                                <h2>부산항 대교</h2>
+                                <p>일곱 빛깔로 물드는 밤바다,<br>
+                                    영도에서 바라보는 최고의 야경 명소</p>
+
+                            </div>
+                            <!-- txt_box:end -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control_wrap">
+                    <div class="swiper thumbSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><!-- 1 -->
+                                <img src="./images/visual_slide1.png" alt="">
+                                <span>흰여울 마을</span>
+                            </div>
+                            <div class="swiper-slide"><!-- 2 -->
+                                <img src="./images/visual_slide2.png" alt="">
+                                <span>커피특화거리</span>
+                            </div>
+                            <div class="swiper-slide"><!-- 3 -->
+                                <img src="./images/visual_slide3.png" alt="">
+                                <span>부산항 대교</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_group">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- visual_end -->
+
+        <!-- section1 -->
+        <div id="section1">
+
+            <div class="section1_title title_area">
+                <img src="./images/section1_character.png" alt="영도 캐릭터" class="8scenes-char character-bounce" data-aos="zoom-out" data-aos-duration="1000">
+                <h3 data-aos="zoom-out" data-aos-duration="800">🌊 영도 8경 🌊</h3>
+                <p data-aos="zoom-out" data-aos-duration="2500">영도를 대표하는 8개의 풍경은 멀리서 감상하는 장소가 아닙니다.<br>
+                    <strong>바다 · 산 · 사람</strong>이 맞닿아 있는 <strong>현장의 풍경</strong> 입니다.
+                </p>
+            </div>
+
+            <!-- slide_wrap -->
+            <div id="section1_slide slide_wrap" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                <div id="slide">
+                    <div class="section1_swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <ul class="swiper-slide"><!-- 1 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide1.png" alt="1"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 2 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide2.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 3 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide3.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 4 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide4.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 1 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide1.png" alt="1"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 2 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide2.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 3 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide3.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="swiper-slide"><!-- 4 -->
+                                <li><a href="./sub02.html">
+                                        <!-- section1_screen -->
+                                        <div class="section1_screen">
+                                            <img src="./images/section1_slide4.png" alt="2"></img>
+
+                                            <div class="card-info">
+                                                <div class="card-title">태종대</div>
+                                                <div class="card-description">태종대는 해송 숲과 기암절벽, 바다가
+                                                    어우러진 영도의 대표 해안 경관입니다.</div>
+                                                <div class="card-location">부산광역시 영도구 전망로 209 (동삼동)</div>
+                                            </div>
+                                        </div>
+                                        <!-- section1_screen:end -->
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div><!-- swiper-wrapper:end -->
+                    </div><!-- section1_swiper-container -->
+
+
+                    <!-- Add Arrows -->
+                    <div class="section1_swiper-button-next"></div>
+                    <div class="section1_swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- slide_wrap:end -->
+
+            <div class="view_more">
+                <a href="./sub02.html" class="btn_view_more">더 보러가기</a>
+            </div>
+
+        </div>
+        <!-- section1:end -->
+
+        <!-- section2 -->
+        <div id="section2"  data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="section2_title title_area">
+                <div>
+                    <h3>관광지 소개 ✨</h3>
+                    <p>여행의 목적과 관심사에 맞춰, 영도를 테마별로 둘러볼 수 있는 장소를 추천합니다. <br>
+                        걷고 싶은 길부터 머물고 싶은 풍경까지 선택해보아요.</p>
+                </div>
+                <div class="view_more_s">
+                    <a href="./sub01.html" class="btn_view_more_s btn2">더 보러가기</a>
+                </div>
+            </div>
+
+            <!-- flex-container -->
+            <div class="flex-container">
+                <!-- 1 -->
+                <div class="flex-slide island active">
+                    <div class="flex-character">
+                        <img src="./images/section2_character.png" alt="초롱이">
+                    </div>
+                    <div class="flex-title">해안 · 섬</div>
+                    <div class="flex-about">
+                        <h4>해안 · 섬</h4>
+                        <span>길 위에서 펼쳐지는 영도의 풍경</span>
+                        <p>바다와 섬이 만나 풍경은 자연스럽게 이어지고, <br>
+                            바다 곁에서 이어지는 풍경은 계절과 시간에 따라 다른 얼굴을 보여줍니다.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="flex-slide street">
+                    <div class="flex-character">
+                        <img src="./images/section2_character.png" alt="초롱이">
+                    </div>
+                    <div class="flex-title">다리 · 거리</div>
+                    <div class="flex-about">
+                        <h4>다리 · 거리</h4>
+                        <span>영도를 잇는 연결의 풍경</span>
+                        <p>다리와 거리가 만나 사람들의 이야기가 흐르고, <br>
+                            매일 지나는 길 위에서 새로운 풍경을 발견합니다.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="flex-slide park">
+                    <div class="flex-character">
+                        <img src="./images/section2_character.png" alt="초롱이">
+                    </div>
+                    <div class="flex-title">공원 · 자연 · 사찰</div>
+                    <div class="flex-about">
+                        <h4>공원 · 자연 · 사찰</h4>
+                        <span>자연과 함께하는 휴식</span>
+                        <p>푸른 자연 속에서 찾는 평화로움, <br>
+                            계절의 변화와 함께 새로운 모습으로 다가옵니다.</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="flex-slide museum">
+                    <div class="flex-character">
+                        <img src="./images/section2_character.png" alt="초롱이">
+                    </div>
+                    <div class="flex-title">전시 · 박물관</div>
+                    <div class="flex-about">
+                        <h4>전시 · 박물관</h4>
+                        <span>역사와 문화가 살아있는 공간</span>
+                        <p>과거와 현재가 만나는 곳, <br>
+                            영도의 이야기를 간직한 특별한 공간입니다.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="flex-slide culture">
+                    <div class="flex-character">
+                        <img src="./images/section2_character.png" alt="초롱이">
+                    </div>
+                    <div class="flex-title">문화 · 산업시설</div>
+                    <div class="flex-about">
+                        <h4>문화 · 산업시설</h4>
+                        <span>영도의 역동적인 현재</span>
+                        <p>산업과 문화가 조화를 이루며, <br>
+                            새로운 가치를 창조하는 영도의 오늘을 만납니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- flex-container:end -->
+        </div>
+        <!-- section2:end -->
+
+        <!-- section3 -->
+        <div id="section3">
+            <div class="section3_wrap" data-aos="fade-left" data-aos-duration="1000">
+
+                <!-- 캐릭터 -->
+                <img src="./images/section3_wave1.png" alt="section3_char" class="section3_wave1 wave-float">
+                <img src="./images/section3_wave2.png" alt="section3_char" class="section3_wave2 wave-float-slow">
+                <img src="./images/section3_character1.png" alt="section3_char" class="section3_char1 character-swim">
+                <img src="./images/section3_character2.png" alt="section3_char" class="section3_char2 character-swim-slow">
+
+                <img src="./images/section3_starfish.png" alt="section3_char" class="section3_starfish starfish-sparkle">
+                <img src="./images/section3_wave3.png" alt="section3_char" class="section3_wave3 wave-float">
+
+                <div id="slide_wrap">
+                    <!-- 왼쪽 텍스트 -->
+                    <div class="text_wrap">
+                        <div class="section3_title title_area">
+                            <h3>인기 코스 ⛰️</h3>
+                            <p>걷고 싶은 길부터 머물고 싶은 풍경까지 선택해보아요.</p>
+                        </div>
+
+                        <div class="wrap_course">
+                            <div class="course course1">
+                                <span>추천코스 · 테마코스</span>
+                                <p>영도 코스중에서 아침부터 밤까지 가장 실용적으로 영도를 둘러볼 수 있는 코스입니다.</p>
+                            </div>
+
+                            <div class="course course2">
+                                <span>맞춤코스 · 트레킹 코스 </span>
+                                <p>여행자의 관심사나 구성원에 따라 다양하게 구성된 코스입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 오른쪽 이미지 (text_wrap 밖으로!) -->
+                    <div class="image_wrap">
+                        <div class="section3_swiper imageSwiper">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                    <a href="./sub01.html">
+                                        <img src="./images/section3_slide2.png" alt="section3_slide2">
+                                        <p class="section3-about">아이 동반 코스</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./sub01.html">
+                                        <img src="./images/section3_slide3.png" alt="section3_slide3">
+                                        <p class="section3-about">다리 · 커리 코스</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./sub01.html">
+                                        <img src="./images/section3_slide4.png" alt="section3_slide4">
+                                        <p class="section3-about">갈맷길 3-3코스</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./sub01.html">
+                                        <img src="./images/section3_slide5.png" alt="section3_slide5">
+                                        <p class="section3-about">커플 · 연인 코스</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./sub01.html">
+                                        <img src="./images/section3_slide6.png" alt="section3_slide1">
+                                        <p class="section3-about">공원 · 사찰 코스</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section3_wrap -->
+        </div>
+        <!-- section3:end -->
+
+        <!-- section4 -->
+        <div id="section4" data-aos="zoom-in" data-aos-duration="1000">
+            <!-- section4_left -->
+            <div class="section4_left">
+                <div class="section4_title title_area">
+                    <h3>감성 지도 베스트 🗺️</h3>
+                    <div class="view_more_s">
+                        <a href="./sub02.html" class="btn_view_more_s btn4">더 보러가기</a>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="section4_left_top"><a href=""><!-- 1 -->
+                            <div class="wrap_img">
+                                <img src="./images/section4_review1.png" alt="review">
+                            </div>
+
+                            <!-- wrap_text -->
+                            <div class="top_wrap_text">
+                                <!-- review_title -->
+                                <p class="review_title">
+                                    <span>등대산 일몰</span>2025.01.05 / dos4652 님
+                                </p>
+                                <!-- review_title:end -->
+                                <div class="meta_info">
+                                    <p>👍3892</p>
+                                    <p>💬501</p>
+                                </div>
+                            </div>
+                            <!-- wrap_text:end -->
+
+                            <!-- 슬라이더 리뷰 -->
+                            <div class="reviews-container">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-date">2026.02.30 /skfoelwkdls12 님</div>
+                                        <div class="review-likes">
+                                            <span>👍</span>
+                                            <span>3892</span>
+                                        </div>
+                                    </div>
+                                    <p class="review-text">
+                                        봉래산에는 예전부터 할머니 신선 전설이 전해진다고 하죠.
+                                        <br>
+                                        영도할매바위도 그런 이야기의 연장선처럼 느껴졌어요.
+                                    </p>
+                                    <p class="review-text">고성이 가족과 찾아보는 노을~ 행복달그느~~
+
+                                    </p>
+                                </div>
+                                <!-- 슬라이더 리뷰 -->
+                        </a></li>
+
+                    <li class="review"><a href=""><!-- 2 -->
+                            <div class="wrap_img">
+                                <img src="./images/section4_review2.png" alt="review">
+                                <p class="review_date">
+                                    <span>2024.08.12</span>
+                                    tkrnsqk_w 님
+                                </p>
+                            </div>
+                        </a>
+                        <p class="event_name">봉래산 불로문</p>
+                        <span class="event_date">아침의 공기</span>
+                    </li>
+
+                    <li class="review"><a href=""><!-- 3 -->
+                            <div class="wrap_img">
+                                <img src="./images/section4_review3.png" alt="review">
+                                <p class="review_date">
+                                    <span>2025.02.24</span>
+                                    princeN 님
+                                </p>
+                            </div>
+                        </a>
+                        <p class="event_name">부산항 묘박지</p>
+                        <span class="event_date">바다 위 배</span>
+                    </li>
+
+                    <li class="review"><a href=""><!-- 4 -->
+                            <div class="wrap_img">
+                                <img src="./images/section4_review4.png" alt="review">
+                                <p class="review_date">
+                                    <span>2024.08.12</span>
+                                    tkrnsqk_w 님
+                                </p>
+                            </div>
+                        </a>
+                        <p class="event_name">중리 노을 전망대</p>
+                        <span class="event_date">안개 속 일몰</span>
+                    </li>
+
+                    <li class="review"><a href=""><!-- 5 -->
+                            <div class="wrap_img">
+                                <img src="./images/section4_review5.png" alt="review">
+                                <p class="review_date">
+                                    <span>2024.08.12</span>
+                                    tkrnsqk_w 님
+                                </p>
+                            </div>
+                        </a>
+                        <p class="event_name">청학 배수지</p>
+                        <span class="event_date">선명한 어둠</span>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- section4_left:end -->
+
+            <!-- section4_right -->
+            <div class="section4_right">
+                <div class="section4_title title_area">
+                    <h3>인기 이벤트 🎇</h3>
+                    <div class="view_more_s">
+                        <a href="./sub03.html" class="btn_view_more_s">더 보러가기</a>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="section4_right_top"><a href=""><!-- 1 -->
+                            <img src="./images/section4_event1.png" alt="">
+                        </a></li>
+
+                    <li class="event"><a href=""><!-- 2 -->
+                            <img src="./images/section4_event2.png" alt="">
+                        </a>
+                        <p class="event_name">2026 병오년 소망기원 해맞이 행사</p>
+                        <span class="event_date">2026.01.01 ~ 미정</span>
+                    </li>
+
+                    <li class="event"><a href=""><!-- 3 -->
+                            <img src="./images/section4_event3.png" alt="">
+                        </a>
+                        <p class="event_name">글로벌 영도 커피페스티벌</p>
+                        <span class="event_date">2026.02.15 ~ 02.16</span>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- section4_right:end -->
+
+        </div>
+        <!-- section4:end -->
+
+        <!-- section5 -->
+        <div id="section5" data-aos="fade-up">
+
+            <div class="sticky_wrap">
+
+                <div class="content">
+                    <div class="section5_title title_area">
+                        <h3>영도 NEWS 📢</h3>
+                        <p>파란섬 영도가 만들어가는 이야기와 콘텐츠를 모아,
+                            <br>지금 만나볼 수 있는 저희의 소식을 전합니다.
+                        </p>
+                    </div>
+                    <img class="section5_character" src="./images/section5_character.png" alt="section3_character">
+                </div>
+
+                <div class="wrap_aside">
+                    <div class="inner_aside" id="cardRail">
+                        <div class="aside1 aside">
+                            <div class="box">
+                                <img src="./images/section5_slide1.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide2.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide3.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide4.png" alt="goods">
+                            </div>
+                        </div>
+
+                        <div class="aside2 aside">
+                            <div class="box">
+                                <img src="./images/section5_slide5.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide6.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide7.png" alt="goods">
+                            </div>
+                            <div class="box">
+                                <img src="./images/section5_slide8.png" alt="goods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- wrap_aside:end -->
+            </div>
+            <!-- #sticky_wrap -->
+
+        </div>
+        <!-- section5:end -->
+
+        <!-- section6 -->
+        <div id="section6">
+            <div class="wrap_section6">
+
+                <div class="section6_title title_area">
+                    <h3>🥰 인스타그램 🥰</h3>
+                    <p>파란섬 영도의 소식을 빨리 확인해보세요!</p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="section6_swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/section6_slide1.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide2.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide3.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide4.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide5.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide1.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide2.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide3.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide4.png" alt="instagram"></div>
+                        <div class="swiper-slide"><img src="./images/section6_slide5.png" alt="instagram"></div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+        <!-- section6:end -->
+
+        <!-- section7 -->
+        <div id="section7">
+            <!-- section7_wrap -->
+            <div class="section7_wrap">
+
+                <!-- description -->
+                <div class="description">
+
+                    <div class="description_title">
+                        <img class="section7_logo" src="./images/section7_logo.png" alt="logo">
+                        <h3>는 어떤 기관인가요?</h3>
+                    </div>
+
+                    <p>파란섬 영도는 <br>
+                        다양한 사이트에 흩어진 영도의 정보들을 취합하고 <br>
+                        영도를 관광하는 분들에게 실질적인 도움이 되고자 설립되었습니다.</p>
+
+                    <img class="section7_character" src="./images/section7_character.png" alt="section7_character character-wave">
+
+                </div>
+                <!-- description:end -->
+
+                <!-- info -->
+                <div class="info">
+                    <img src="./images/section7_about.png" alt="center">
+                </div>
+                <!-- info:end -->
+
+            </div>
+            <!-- section7_wrap:end -->
+        </div>
+        <!-- section7:end -->
+
+        <!-- footer -->
+        <footer>
+
+            <!-- footer_info -->
+            <div class="footer_info">
+
+                <!-- footer_info_wrap -->
+                <div class="footer_info_wrap">
+
+
+                    <ul class="partners">
+                        <li>
+                            <img src="./images/partners01.png" alt="partners">
+                        </li>
+
+                        <li>
+                            <img src="./images/partners02.png" alt="partners">
+                        </li>
+
+                        <li><a href="#">
+                                <img src="./images/partners03.png" alt="partners">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/partners04.png" alt="partners">
+                            </a></li>
+                    </ul>
+
+
+                    <ul class="sns">
+
+                        <li><a href="#">
+                                <img src="./images/sns_youtube.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_instagram.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_thread.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_x.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_facebook.png" alt="sns">
+                            </a></li>
+
+                    </ul>
+
+                </div>
+                <!-- footer_info_wrap:end -->
+
+            </div>
+            <!-- footer_info:end -->
+
+            <!-- footer_visual -->
+            <div class="footer_visual">
+
+                <div class="footer_text">
+                    <img src="./images/footer_logo.png" alt="footer_logo" class="footer_logo">
+
+                    <div class="pt">
+                        <p>(49011) 부산광역시 영도구 태종로 400</p>
+                        <p>대표전화 : 051-410-4223</p>
+                    </div>
+
+                    <p>Copyright©Paransumm.All rights reserved.</p>
+                </div>
+
+
+
+            </div>
+            <!-- footer_visual:end -->
+
+        </footer>
+        <!-- footer:end -->
+
+
+    </div>
+    <!-- wrap:end -->
+
+
+    <!-- jQuery 오픈소스 : 로컬방식 -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 제어코드 연결 -->
+    <script src="js/script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <!-- 브라우저 뷰포트 너비를 1360px로 고정하여 페이지를 그리도록 설정 -->
+    <title>파란섬 영도</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- jQuary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style03.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <div id="header">
+
+            <!-- header_top -->
+            <div class="header_top">
+                <div class="inner_header">
+
+                    <div class="header_top_left">
+                        <div class="line"></div>
+                        <p>부서지는 파도 사이 아름다운 푸른 섬</p>
+                        <img class="weather_icon" src="./images/util_weather.png" alt="weather_icon">
+                        <p class="weather">16.1℃</p>
+
+                    </div>
+
+                    <div class="header_top_right">
+
+                        <ul>
+
+                            <li><!-- 1 -->
+                                <div class="search_bar">
+                                    <form action="" method="get">
+                                        <input type="search" name="search" id="search" placeholder="Search">
+                                    </form>
+                                </div><!-- .search_bar -->
+                            </li>
+
+                            <li><!-- 2 -->
+                                <a href="#">
+                                    <img src="./images/util_membershp.png" alt="">
+                                </a>
+                            </li>
+
+                            <li><!-- 3 -->
+                                <div class="select_wrap">
+                                    <form action="" method="post">
+                                        <select name="familysite" id="familysite">
+                                            <option value="">Korean</option>
+                                            <!-- 빈 데이터, disabled : 클릭해도 선택안됨. -->
+                                            <!-- selected : 처음 선택된 상태  -->
+                                            <!-- <option value="">Korean</option> -->
+                                            <option value="">English</option>
+                                        </select>
+                                    </form>
+                                </div><!-- .select_wrap -->
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- inner_header:end -->
+            </div>
+            <!-- header_top:end -->
+
+            <!-- header_bottom -->
+            <div class="header_bottom">
+                <div class="inner_header_bottom">
+                    <h1 class="logo_box">
+                        <a href="./index.html">
+                            <img class="logo" src="./images/logo.png" alt="파란섬 영도">
+                        </a>
+                    </h1>
+
+                    <nav class="wrap_gnb">
+                        <ul class="gnb">
+                            <li><a href="./sub01.html">영도 여행길</a></li>
+                            <li><a href="./sub02.html">영도 느끼기</a></li>
+                            <li><a href="./sub03.html">영도 이모저모</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- header_bottom:end -->
+        </div>
+        <!-- header:end -->
+
+        <!-- top-visual -->
+        <div id="visual">
+
+            <div class="visual-wrap">
+
+                <!-- <img src="./images/sub02/visual-fish.png" alt="fish" class="visual-fish"> -->
+
+                <div class="visual-text" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    <p>영도의 유명 관광지 뿐만 아니라 <br>
+                        지역 크리에이터의 추천 스팟을 한 번에 !</p>
+                    <h1>영도 느끼기</h1>
+                </div>
+
+                <div class="visual-char">
+                    <img src="./images/sub02/visual.png" alt="top_visual_char" data-aos="fade-left"
+                        data-aos-duration="1200" data-aos-delay="400">
+                </div>
+
+            </div>
+            <!-- top-visual-wrap -->
+
+            <div class="text-flow">
+                <p> &nbsp &nbsp바다 내음 가득한 해녀의 손맛으로 즐기는 신선한 성게알, 중리 해녀촌 🐚 &nbsp &nbsp
+                    영도가 품은 달콤하고 포슬포슬한 역사의 맛, 조내기 고구마 디저트 🍠 &nbsp &nbsp
+                    절벽 위 굽이치는 골목과 동화 같은 바다 파노라마, 흰여울문화마을 🏠 &nbsp &nbsp
+                    보석 같은 불빛의 바다와 화려하게 일렁이는 도심의 밤, 청학 전망대 ✨ ☕ &nbsp &nbsp
+                    바다 내음 가득한 해녀의 손맛으로 즐기는 신선한 성게알, 중리 해녀촌 🐚 &nbsp &nbsp
+                    영도가 품은 달콤하고 포슬포슬한 역사의 맛, 조내기 고구마 디저트 🍠 &nbsp &nbsp
+                    절벽 위 굽이치는 골목과 동화 같은 바다 파노라마, 흰여울문화마을 🏠 &nbsp &nbsp
+                    보석 같은 불빛의 바다와 화려하게 일렁이는 도심의 밤, 청학 전망대 ✨ ☕ &nbsp &nbsp</p>
+            </div>
+
+        </div>
+        <!-- top-visual:end -->
+
+        <!-- section1 -->
+        <div id="section1">
+            <div class="bubble-aside bubble-left">
+                <!-- 15 Bubbles -->
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+            <div class="bubble-aside bubble-right">
+                <!-- 15 Bubbles -->
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+
+            <!-- fish img -->
+            <img src="./images/sub02/fish1.png" alt="fish" class="fish1" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="300">
+            <img src="./images/sub02/fish2.png" alt="fish" class="fish2" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="300">
+            <div class="section1_title title_area" data-aos="fade-down" data-aos-duration="1000">
+                <h3>영도 8경 알아보기 🔭</h3>
+            </div>
+
+            <!-- 8scene -->
+            <div class="scene-wrap">
+
+                <!-- slider-wrapper -->
+                <div class="slider-wrapper">
+
+                    <div class="swiper scene-Swiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- 1 (1-2경) -->
+                            <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="800">
+                                <img class="scene" src="./images/sub02/scene_1.png" alt="scene">
+
+                                <img class="scene" src="./images/sub02/scene_2.png" alt="scene">
+                            </div>
+
+                            <!-- 2 (3-4경) -->
+                            <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="800">
+                                <img class="scene" src="./images/sub02/scene_3.png" alt="scene">
+
+                                <img class="scene" src="./images/sub02/scene_4.png" alt="scene">
+                            </div>
+
+                            <!-- 3 (5-6경) -->
+                            <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="800">
+                                <img class="scene" src="./images/sub02/scene_5.png" alt="scene">
+
+                                <img class="scene" src="./images/sub02/scene_6.png" alt="scene">
+                            </div>
+
+                            <!-- 4 (7-8경) -->
+                            <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="800">
+                                <img class="scene" src="./images/sub02/scene_7.png" alt="scene">
+
+                                <img class="scene" src="./images/sub02/scene_8.png" alt="scene">
+                            </div>
+
+                        </div>
+                        <!-- swiper-wrapper:end -->
+                    </div>
+
+                </div>
+                <!-- slider-wrapper:end -->
+
+                <!-- 네비게이션 -->
+                <div class="navigation-container">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+
+            </div>
+            <!-- 8scene:end -->
+
+        </div>
+        <!-- section1:end -->
+
+        <!-- section2 -->
+        <div id="section2">
+
+            <div class="section2_title title_area" data-aos="fade-down" data-aos-duration="1000">
+                <h3>영도 로컬 PICK 🛸</h3>
+                <div class="click">
+                    <span>지금 영도에서 가장 사랑받는 동네는 어디일까요?</span>
+                    <!-- <img src="./images/sub02/mouse_icon.png" alt="icon" class="mouse"> -->
+                </div>
+            </div>
+
+            <div class="count-wrap">
+
+                <div class="count count1" data-aos="fade-down" data-aos-delay="100">
+                    <p>남항동</p>
+                    <p><span class="counter">895</span>개</p>
+                </div>
+                <div class="count count2" data-aos="fade-down" data-aos-delay="200">
+                    <p>봉래동</p>
+                    <p><span class="counter">724</span>개</p>
+                </div>
+
+                <div class="count count3" data-aos="fade-down" data-aos-delay="300">
+                    <p class="green">영선동</p>
+                    <p><span class="counter">3,622</span>개</p>
+                </div>
+
+                <div class="count count4" data-aos="fade-down" data-aos-delay="100">
+                    <p class="green">청학동</p>
+                    <p><span class="counter">2,845</span>개</p>
+                </div>
+
+                <div class="count count5" data-aos="fade-down" data-aos-delay="200">
+                    <p>동삼1동</p>
+                    <p><span class="counter">1,210</span>개</p>
+                </div>
+
+                <div class="count count6" data-aos="fade-down" data-aos-delay="200">
+                    <p>동삼2동</p>
+                    <p><span class="counter">1,635</span>개</p>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- section2:end -->
+
+        <!-- section3 -->
+        <div id="section3">
+
+            <div class="section3_title title_area" data-aos="fade-down" data-aos-duration="1000">
+                <h3>현재 인기 스팟 💫</h3>
+            </div>
+
+            <!-- spots-grid -->
+            <ul class="spots-grid" data-aos="fade-right" data-aos-duration="1000">
+
+                <!-- 1 -->
+                <li class="section3_top">
+
+                    <div class="section3-top-text">
+                        <p class="title">중리 노을산책로</p>
+                        <p class="sub">바다 위를 걷듯 펼쳐지는 영도의 노을 🌅</p>
+                    </div>
+
+                    <div class="section3_top_wrap">
+
+                        <div class="top-1">
+                            <img src="./images/sub02/sec3_01.png" alt="review" class="review">
+                        </div>
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text">
+                            <!-- review_title -->
+                            <p class="post_title">
+                                <span>2025.09.15 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                            <div class="meta_info">
+                                <p>👍3892</p>
+                                <p>💬501</p>
+                            </div>
+                        </div>
+                        <!-- wrap_text:end -->
+
+                        <!-- wrap_tag -->
+                        <div class="wrap_tag">
+                            <p class="tag">#인생샷 #골목감성 #영도노을</p>
+                        </div>
+                        <!-- wrap_tag:end -->
+
+                    </div>
+
+                    <!-- review-card 1 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile1.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 asd2 님의 리뷰 / 20대</h6>
+                                <p class="posting">
+                                    해가 지고 나면 은은한 조명이 켜져 밤바다를 보며 걷기에도 안전하고 낭만적이에요.
+                                </p>
+                                <span>📸 사진 점수 ★★★★★ &nbsp &nbsp ⭐ 힙 지수 ★★★★☆</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 2 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile2.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 dsfj12 님의 리뷰 / 30대</h6>
+                                <p class="posting">
+                                    퇴근 후 복잡한 생각 비우기 딱 좋은 곳. 파도 소리 들으며 물멍하면 힘이 나요.
+                                </p>
+                                <span>🌊 물멍 점수 ★★★★★ &nbsp &nbsp 🚗 편의성 ★★★★☆</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 3 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile3.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 85safd 님의 리뷰 / 40대</h6>
+                                <p class="posting">
+                                    화려한 관광지보다 이곳의 낙조가 더 깊은 울림을 주네요. 비워낼수록 채워지는 여유가 좋습니다.
+                                </p>
+                                <span>☕ 여유 점수 ★★★★★ &nbsp &nbsp 👟 산책 난이도 (편함)</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 4 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile4.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 bada88 님의 리뷰 / 50대</h6>
+                                <p class="posting">
+                                    뜨거웠던 낮의 해가 차분하게 몸을 낮추는 법을 가르쳐주는 길. 가족과 함께 걷기 참 좋네요.
+                                </p>
+                                <span>🌅 경관 점수 ★★★★★ &nbsp &nbsp 🦀 맛집 점수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <!-- 2 -->
+
+                <li class="section3_top">
+
+                    <div class="section3-top-text">
+                        <p class="title">봉산마을 마실길</p>
+                        <p class="sub">골목 사이를 걷듯 전해지는 마을의 온기 💘</p>
+                    </div>
+
+                    <div class="section3_top_wrap">
+
+                        <div class="top-1">
+                            <img src="./images/sub02/sec3_02.png" alt="review" class="review">
+                        </div>
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text">
+                            <!-- review_title -->
+                            <p class="post_title">
+                                <span>2025.10.22 / 99vodlsc 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                            <div class="meta_info">
+                                <p>👍3892</p>
+                                <p>💬501</p>
+                            </div>
+                        </div>
+                        <!-- wrap_text:end -->
+
+                        <!-- wrap_tag -->
+                        <div class="wrap_tag">
+                            <p class="tag">#마을산책 #빈집공방 #루프탑전망</p>
+                        </div>
+                        <!-- wrap_tag:end -->
+
+                    </div>
+
+                    <!-- review-card 1 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile5.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 asd2 님의 리뷰 / 20대</h6>
+                                <p class="posting">
+                                    빈집들이 갤러리나 공방으로 변한 게 너무 힙해요! 특히 루프탑에서 보는 부산항 뷰는 사람도 적어서 완벽해요.
+                                </p>
+                                <span>📸 사진 점수 ★★★★★ &nbsp &nbsp ⭐ 힙 지수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 2 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile6.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 fdsc82 님의 리뷰 / 30대</h6>
+                                <p class="posting">
+                                    미로 같은 골목을 탐험하는 재미가 쏠쏠해요. 작고 귀여운 공방들을 구경하다 보면 시간 가는 줄 모릅니다.
+                                </p>
+                                <span>🤫 비밀 보장 ★★★★★ &nbsp &nbsp 🚶 골목 탐험 ★★★★☆</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 3 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile7.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 sa7415 님의 리뷰 / 40대</h6>
+                                <p class="posting">
+                                    마을 곳곳에 스며든 예술적 감성이 다정해요. 소박한 정취를 느끼며 천천히 걷기 이보다 좋을 수 없죠.
+                                </p>
+                                <span> 감성 충전 ★★★★★ &nbsp &nbsp 👟 산책 난이도 (편함)</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 4 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile8.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 joi85 님의 리뷰 / 50대</h6>
+                                <p class="posting">
+                                    조선소 사람들의 삶이 묻어있는 터라 정겨워요. 마을 광장이 주는 편안함에 마음까지 넉넉해지는 길입니다.
+                                </p>
+                                <span>🖼️ 마을 정취 ★★★★★ &nbsp &nbsp 💪 활력 지수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <!-- 3 -->
+                <li class="section3_top">
+
+                    <div class="section3-top-text">
+                        <p class="title">미창석유 신방파제</p>
+                        <p class="sub">세월을 걷듯 묵직하게 남은 영도의 흔적 🛳️</p>
+                    </div>
+
+                    <div class="section3_top_wrap">
+
+                        <div class="top-1">
+                            <img src="./images/sub02/sec3_03.png" alt="review" class="review">
+                        </div>
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text">
+                            <!-- review_title -->
+                            <p class="post_title">
+                                <span>2026.01.20 / 53asdf 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                            <div class="meta_info">
+                                <p>👍4020</p>
+                                <p>💬621</p>
+                            </div>
+                        </div>
+                        <!-- wrap_text:end -->
+
+                        <!-- wrap_tag -->
+                        <div class="wrap_tag">
+                            <p class="tag">#이색야경 #낚시명당 #로컬맛집</p>
+                        </div>
+                        <!-- wrap_tag:end -->
+
+                    </div>
+
+                    <!-- review-card 1 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile9.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 ehdlcl54 님의 리뷰 / 20대</h6>
+                                <p class="posting">
+                                    거대 조선소 크레인을 배경으로 던지는 캐스팅! 다른 곳에선 볼 수 없는 압도적인 야경 낚시 포인트입니다
+                                </p>
+                                <span>📸 사진 점수 ★★★★★ &nbsp &nbsp 🚢 항만감성 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 2 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile10.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 eidm22 님의 리뷰 / 30대</h6>
+                                <p class="posting">
+                                    낚시 좀 한다 하는 남자들은 다 여기 모이죠. 학꽁치 떼 들어올 때 손맛은 물론, 밤새 원투 던지기 최고입니다.
+                                </p>
+                                <span>🌅 경관 점수 ★★★★★ &nbsp &nbsp 🎣 손맛점수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 3 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile11.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 85safd 님의 리뷰 / 40대</h6>
+                                <p class="posting">
+                                    화려한 불빛보다 조선소의 실루엣이 주는 중후함이 좋습니다. 묵직한 바닷바람 맞으며 걷기 이보다 좋을 수 없어요.
+                                </p>
+                                <span>⚓ 로컬정취 ★★★★★ &nbsp &nbsp 💪 활력지수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- review-card 4 -->
+                    <div class="review-card-wrap">
+
+                        <div class="review-card">
+                            <div class="image-wrap">
+                                <img src="./images/sub02/profile4.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box">
+                                <h6>로컬 크리에이터 skRtdk24 님의 리뷰 / 50대</h6>
+                                <p class="posting">
+                                    영도 신방파제는 역시 조과가 확실합니다. 전갱이랑 고등어 손맛 좀 보고 나면 일주일 피로가 싹 가십니다.
+                                </p>
+                                <span>🐟 조과지수 ★★★★★ &nbsp &nbsp 🥘 노포감성 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+
+            </ul>
+            <!-- spots-grid:end -->
+
+            <!-- another-spots-grid -->
+            <ul class="another-spots-grid">
+
+                <!-- 1 -->
+                <li class="section3_bottoom" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    <div class="section3-bottoom-text">
+                        <p class="title">중리 노을산책로</p>
+                        <p class="sub">바다 위에 펼쳐진 초록빛 쉼터 🌿 </p>
+                        <span>
+                            탁 트인 바다와 넓은 잔디밭이 만나는 이곳은 영도 최고의 피크닉 명소예요. 아이들은 광장에서 뛰놀고 우리는 바다 구경하며 걷기만 해도 ...
+                        </span>
+                    </div>
+
+                    <div class="image_wrap image_wrap_first">
+                        <img src="./images/sub02/sec3_4.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.09.15 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                            <div class="meta_info_b">
+                                <p>👍3892</p>
+                                <p>💬501</p>
+                            </div>
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <div class="image_wrap image_wrap_second">
+                        <img src="./images/sub02/sec3_4_1.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.09.15 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <div class="image_wrap image_wrap_second">
+                        <img src="./images/sub02/sec3_4_2.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.09.15 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <!-- review-card 1 -->
+                    <div class="review-card-wrap-b">
+
+                        <div class="review-card-b">
+                            <div class="image-wrap-b">
+                                <img src="./images/sub02/profile13.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box_b">
+                                <h6>로컬 크리에이터 bada88 님의 리뷰 / 50대</h6>
+                                <p class="posting">
+                                    가족들과 도시락 싸 들고 소풍 오기 참 좋습니다. 해양박물관 구경하고 나와서 바닷바람 맞으며 걷다 보면 막혔던 가슴이 뻥 뚫리는 기분입니다.
+                                </p>
+
+                                <span>🌅 경관 점수 ★★★★★ &nbsp &nbsp 🦀 맛집 점수 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <!-- 2 -->
+                <li class="section3_bottoom" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+
+                    <div class="section3-bottoom-text">
+                        <p class="title">복천사</p>
+                        <p class="sub">구름 위를 걷듯 평온한 마음의 휴식 🙏 </p>
+                        <span>
+                            탁 트인 바다와 넓은 잔디밭이 만나는 이곳은 영도 최고의 피크닉 명소예요. 아이들은 광장에서 뛰놀고 우리는 바다 구경하며 걷기만 해도 ...
+                        </span>
+                    </div>
+
+                    <div class="image_wrap image_wrap_first">
+                        <img src="./images/sub02/sec3_5.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.09.05 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                            <div class="meta_info_b">
+                                <p>👍4020</p>
+                                <p>💬621</p>
+                            </div>
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <div class="image_wrap image_wrap_second">
+                        <img src="./images/sub02/sec3_5_1.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.10.11 / dos4652 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <div class="image_wrap image_wrap_second">
+                        <img src="./images/sub02/sec3_5_2.png" alt="sec3_4">
+
+                        <!-- wrap_text -->
+                        <div class="top_wrap_text_b">
+                            <!-- review_title -->
+                            <p class="post_title_b">
+                                <span>2025.11.25 / romii22 님</span>
+                            </p>
+                            <!-- review_title:end -->
+                        </div>
+                        <!-- wrap_text:end -->
+                    </div>
+
+                    <!-- review-card 1 -->
+                    <div class="review-card-wrap-b">
+
+                        <div class="review-card-b">
+                            <div class="image-wrap-b">
+                                <img src="./images/sub02/profile14.png" alt="profile">
+                            </div>
+
+                            <div class="comment-box_b">
+                                <h6>로컬 크리에이터 bada88 님의 리뷰 / 50대</h6>
+                                <p class="posting">
+                                    절 특유의 고즈넉함과 탁 트인 전경이 일품입니다. 은은한 풍경 소리 들으며 야경을 즐기다 보면 마음이 절로 평온해지는 진짜 휴식처입니다.
+                                </p>
+
+                                <span>🌅 경관 점수 ★★★★★ &nbsp &nbsp 🚗 편의성 ★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </li>
+
+
+            </ul>
+            <!-- another-spots-grid:end -->
+
+
+
+        </div>
+        <!-- section3:end -->
+
+        <!-- footer -->
+        <footer>
+
+            <!-- footer_info -->
+            <div class="footer_info">
+
+                <!-- footer_info_wrap -->
+                <div class="footer_info_wrap">
+
+
+                    <ul class="partners">
+                        <li>
+                            <img src="./images/partners01.png" alt="partners">
+                        </li>
+
+                        <li>
+                            <img src="./images/partners02.png" alt="partners">
+                        </li>
+
+                        <li><a href="#">
+                                <img src="./images/partners03.png" alt="partners">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/partners04.png" alt="partners">
+                            </a></li>
+                    </ul>
+
+
+                    <ul class="sns">
+
+                        <li><a href="#">
+                                <img src="./images/sns_youtube.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_instagram.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_thread.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_x.png" alt="sns">
+                            </a></li>
+
+                        <li><a href="#">
+                                <img src="./images/sns_facebook.png" alt="sns">
+                            </a></li>
+
+                    </ul>
+
+                </div>
+                <!-- footer_info_wrap:end -->
+
+            </div>
+            <!-- footer_info:end -->
+
+            <!-- footer_visual -->
+            <div class="footer_visual">
+
+                <div class="footer_text">
+                    <img src="./images/footer_logo.png" alt="footer_logo" class="footer_logo">
+
+                    <div class="pt">
+                        <p>(49011) 부산광역시 영도구 태종로 400</p>
+                        <p>대표전화 : 051-410-4223</p>
+                    </div>
+
+                    <p>Copyright©Paransumm.All rights reserved.</p>
+                </div>
+
+            </div>
+            <!-- footer_visual:end -->
+
+        </footer>
+        <!-- footer:end -->
+
+
+
+    </div>
+
+    <!-- 1. jQuery (한 번만 로드) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 2. 플러그인 의존성 (Waypoints) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- 3. CountUp 플러그인 (CDN 방식) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <!-- 제어코드 연결 -->
+    <script src="js/script_sub.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+
+</body>
+
+</html>
